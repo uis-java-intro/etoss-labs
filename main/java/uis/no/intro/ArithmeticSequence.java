@@ -1,6 +1,6 @@
 package main.java.uis.no.intro;
 
-public class ArithmeticSequence implements Sequence {
+public class ArithmeticSequence extends AbstractSequence implements Sequence {
 	private int d;
 	private int a1;
 	
@@ -12,22 +12,12 @@ public class ArithmeticSequence implements Sequence {
 	public int getElement(int n) {
 		return a1 + d*n;
 	}
-	
-	public int sum(int n) {
-		int result = 0;
-		for (int i=0;i<n;i++) {
-			result += getElement(i);
-		}
-		return result;
-	}
 
-	@Override
-	public int product(int n) {
-		int result = 1;
-		for (int i=0;i<n;i++) {
-			result *= getElement(i);
+	@Override public String toString() {
+		String resultat = "";
+		for (int i=0;i<10;i++) {
+			resultat += getElement(i) + ", ";
 		}
-		return result;
+		return resultat;
 	}
-
 }
