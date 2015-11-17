@@ -3,6 +3,7 @@ package main.java.no.uis.intro;
 public abstract class AbstractSequence implements SearchableSequence {
 	public int sum(int n) {
 		int result = 0;
+		if (n < 1) throw new IllegalArgumentException("Kan ikke ha sum for sekvenser under 1 lange!");
 		for (int i=0;i<n;i++) {
 			result += getElement(i);
 		}
@@ -12,6 +13,7 @@ public abstract class AbstractSequence implements SearchableSequence {
 	@Override
 	public int product(int n) {
 		int result = 1;
+		if (n < 1) throw new IllegalArgumentException("Kan ikke ha sum for sekvenser under 1 lange!");
 		for (int i=0;i<n;i++) {
 			result *= getElement(i);
 		}
