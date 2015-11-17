@@ -1,5 +1,5 @@
-package main.java.no.uis.intro;
+package main.java.uis.no.intro;
 
-public interface SearchableSequence {
-  
+public interface SearchableSequence extends Sequence {
+	public int findElementIn(int k, int limit);
 }
