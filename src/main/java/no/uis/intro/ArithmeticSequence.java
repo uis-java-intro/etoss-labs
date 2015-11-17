@@ -4,7 +4,7 @@ public class ArithmeticSequence extends AbstractSequence implements Sequence {
 	private int d;
 	private int a1;
 	
-	public ArithmeticSequence(int d, int a1) {
+	public ArithmeticSequence(int a1, int d) {
 		this.d = d;
 		this.a1 = a1;
 	}
