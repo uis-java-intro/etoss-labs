@@ -1,4 +1,4 @@
-package main.java.uis.no.intro;
+package main.java.no.uis.intro;
 
 public class ArithmeticSequence extends AbstractSequence implements Sequence {
 	private int d;

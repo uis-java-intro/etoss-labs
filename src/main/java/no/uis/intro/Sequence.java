@@ -1,4 +1,4 @@
-package main.java.uis.no.intro;
+package main.java.no.uis.intro;
 
 public interface Sequence {
     public int getElement(int n);

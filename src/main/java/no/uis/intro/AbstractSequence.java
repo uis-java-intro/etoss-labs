@@ -1,4 +1,4 @@
-package main.java.uis.no.intro;
+package main.java.no.uis.intro;
 
 public abstract class AbstractSequence implements SearchableSequence {
 	public int sum(int n) {
